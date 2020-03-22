@@ -20,9 +20,9 @@ const Header = ({ currentUser, hidden }) => (
       <Link to="/shop" className="option">
         SHOP
       </Link>
-      <Link to="/contact" className="option">
+      {/* <Link to="/contact" className="option">
         CONTACT
-      </Link>
+      </Link> */}
       {currentUser ? (
         <div className="option" onClick={() => auth.signOut()}>
           SIGN OUT
